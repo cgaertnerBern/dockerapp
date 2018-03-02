@@ -35,10 +35,9 @@ jobs:
             docker-compose up -d
             docker-compose run dockerapp echo 'Paco is the king!'
 
-  workflows:
+workflows:
   version: 2
   one_and_two:
     jobs:
       - one
       - two
-      
